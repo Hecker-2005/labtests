@@ -1,0 +1,11 @@
+curl -sS https://example.com
+
+curl -I https://example.com
+
+sudo apt update && sudo apt install zaproxy -y
+
+zaproxy -h
+
+wpscan --version
+
+

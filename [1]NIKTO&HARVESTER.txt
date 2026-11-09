@@ -1,0 +1,10 @@
+whois google.com
+
+theHarvester -h
+
+theHarvester -d google.com -b all
+
+nmap -A -T4 192.168.1.10
+
+nikto -h https://example.com
+

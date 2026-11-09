@@ -1,0 +1,33 @@
+john
+
+sudo apt update
+
+sudo apt install john -y
+
+ls /usr/share/wordlists/
+
+sudo gzip -dk /usr/share/wordlists/rockyou.txt.gz
+
+openssl passwd -1 password123
+
+nano hash.txt
+
+john --format=md5crypt --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+
+john --show hash.txt
+
+sudo apt install openssh-server hydra -y
+
+sudo systemctl enable --now ssh
+
+sudo systemctl status ssh
+
+ip addr
+
+sudo adduser student
+
+hydra -l student -P passwords.txt -t 4 ssh://127.0.0.1
+
+ssh student@127.0.0.1
+
+exit
